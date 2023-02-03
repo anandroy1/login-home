@@ -11,3 +11,89 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  /* background-color: red; */
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 3.2rem;
+}
+.grid-three-column {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  /* background-color: #535bf2; */
+  padding: 0 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info {
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  background-color: #213547;
+  text-align: center;
+}
+
+@media screen and (max-width: 1119px) {
+  .container {
+    max-width: 90%;
+  }
+  .grid {
+    gap: 1.6rem;
+  }
+
+  .card {
+    background-color: #213547;
+  }
+  .card-info {
+    padding: 0rem;
+    background-color: #213547;
+  }
+}
+
+.card-id {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 1.6rem;
+}
+
+p {
+  text-align: justify;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.header {
+  font-size: 2em;
+  line-height: 1.1;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  padding: 1rem;
+  /* background-color: #0e0f0f; */
+  text-align: left;
+  font-family: "Cormorant Garamond", serif;
+  text-transform: capitalize;
+}
